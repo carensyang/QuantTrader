@@ -3,11 +3,12 @@
 
 from sqlalchemy import create_engine
 import pandas as pd
+from config import db_path
 
 # bundle_data
 # data_portal 数据门户：对数据抽象封装，不同数据源获取方式封装，统一输出格式
 
-engine = create_engine('sqlite:////*')
+engine = create_engine(db_path)
 
 
 # 数据接口
